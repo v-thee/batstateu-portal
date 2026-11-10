@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batangas State University · TNEU Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo-area">
+        <img src="medias/BSU-Logo.jpeg" alt="BSU Logo" class="logo-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23E93324%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22white%22 font-weight=%22bold%22%3EB%3C/text%3E%3C/svg%3E'">
+        <div class="logo-text-block">
+          <span class="logo-university">BATANGAS STATE UNIVERSITY</span>
+          <span class="logo-subtitle">The National Engineering University</span>
+        </div>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#campuses" class="nav-link">Campuses</a>
+        <a href="#academics" class="nav-link">Academics</a>
+        <a href="#news" class="nav-link">News</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html" class="btn-login"><i class="fas fa-user-circle"></i> Login</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section (shorter) -->
+  <section class="hero" id="home">
+    <div class="hero-bg-slider" id="heroSlider">
+      <div class="hero-bg active" style="background-image: url('medias/BSU.jpeg');"></div>
+      <div class="hero-bg" style="background-image: url('medias/BSU-1.jpeg');"></div>
+      <div class="hero-bg" style="background-image: url('medias/BSU-2.jpeg');"></div>
+      <div class="hero-bg" style="background-image: url('medias/BSU-3.jpeg');"></div>
+      <div class="hero-bg" style="background-image: url('medias/BSU-4.jpeg');"></div>
+    </div>
+    <div class="hero-fade"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">National Engineering University</div>
+      <h1 class="hero-title">
+        <span class="title-line">Shape the</span>
+        <span class="title-line highlight">Future</span>
+        <span class="title-line">with Batangas State University</span>
+      </h1>
+      <p class="hero-description">
+        Where innovation meets tradition — fostering world-class engineers,
+        technologists, and leaders through cutting-edge research and a vibrant
+        academic community.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" id="exploreBtn">Explore Programs <i class="fas fa-arrow-right"></i></button>
+        <button class="btn btn-outline" id="applyBtn">Apply Now</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="25">0</span>
+          <span class="stat-label">k+ Students</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="150">0</span>
+          <span class="stat-label">Programs</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span>
+          <span class="stat-label">% Employability</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-tag">About TNEU</span>
+          <h2 class="section-title">The National Engineering University</h2>
+          <p class="section-text">
+            Batangas State University (BatStateU) is the <strong>National Engineering University</strong> of the Philippines,
+            committed to producing globally competitive graduates and advancing research and innovation.
+            With a rich history spanning over 100 years, we continue to lead in engineering, technology,
+            and the sciences.
+          </p>
+          <p class="section-text">
+            Our TNEU Portal connects students, faculty, and partners to a seamless digital experience —
+            from admissions to academic resources, all in one place.
+          </p>
+          <button class="btn btn-primary mt-2" id="learnMoreBtn">Learn More <i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="about-image">
+          <img src="medias/BSU-1.jpeg" alt="BSU Campus" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23E93324%22/%3E%3Ctext x=%22300%22 y=%22220%22 font-size=%2230%22 text-anchor=%22middle%22 fill=%22white%22%3EBSU Campus%3C/text%3E%3C/svg%3E'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats / Highlights Band -->
+  <section class="highlights-band">
+    <div class="container">
+      <div class="highlights-grid">
+        <div class="highlight-item">
+          <i class="fas fa-award"></i>
+          <span class="highlight-number" data-target="12">0</span>
+          <span class="highlight-label">Centers of Excellence</span>
+        </div>
+        <div class="highlight-item">
+          <i class="fas fa-users"></i>
+          <span class="highlight-number" data-target="1500">0</span>
+          <span class="highlight-label">Faculty Members</span>
+        </div>
+        <div class="highlight-item">
+          <i class="fas fa-globe-asia"></i>
+          <span class="highlight-number" data-target="80">0</span>
+          <span class="highlight-label">Global Partners</span>
+        </div>
+        <div class="highlight-item">
+          <i class="fas fa-flask"></i>
+          <span class="highlight-number" data-target="200">0</span>
+          <span class="highlight-label">Research Projects</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campuses Section -->
+  <section class="campuses-section" id="campuses">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Campuses</span>
+        <h2 class="section-title">Constituent & Main Campuses</h2>
+        <p class="section-subtitle">Discover the home of innovation across Batangas</p>
+      </div>
+
+      <div class="campus-grid">
+        <!-- Pablo Borbon -->
+        <div class="campus-card">
+          <div class="campus-image-wrap">
+            <img src="medias/BSU.jpeg" alt="Pablo Borbon Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EPablo Borbon%3C/text%3E%3C/svg%3E'">
+            <div class="campus-gradient"></div>
+          </div>
+          <div class="campus-info">
+            <h3 class="campus-name">Pablo Borbon Campus</h3>
+            <span class="campus-tag">Main I · Flagship</span>
+            <p class="campus-address">Rizal Avenue, Poblacion, Batangas City</p>
+          </div>
+        </div>
+
+        <!-- Alangilan -->
+        <div class="campus-card">
+          <div class="campus-image-wrap">
+            <img src="medias/BSU-Alangilan.jpeg" alt="Alangilan Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EAlangilan%3C/text%3E%3C/svg%3E'">
+            <div class="campus-gradient"></div>
+          </div>
+          <div class="campus-info">
+            <h3 class="campus-name">Alangilan Campus</h3>
+            <span class="campus-tag">Main II · KIST Park</span>
+            <p class="campus-address">Golden Country Homes, Alangilan, Batangas City</p>
+          </div>
+        </div>
+
+        <!-- ARASOF-Nasugbu -->
+        <div class="campus-card">
+          <div class="campus-image-wrap">
+            <img src="medias/BSU-ARASOF.jpeg" alt="ARASOF-Nasugbu Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EARASOF%3C/text%3E%3C/svg%3E'">
+            <div class="campus-gradient"></div>
+          </div>
+          <div class="campus-info">
+            <h3 class="campus-name">ARASOF-Nasugbu Campus</h3>
+            <span class="campus-tag">Satellite</span>
+            <p class="campus-address">Brgy. Bucana, Nasugbu</p>
+          </div>
+        </div>
+
+        <!-- JPLPC-Malvar -->
+        <div class="campus-card">
+          <div class="campus-image-wrap">
+            <img src="medias/BSU-Malvar.jpeg" alt="JPLPC-Malvar Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EMalvar%3C/text%3E%3C/svg%3E'">
+            <div class="campus-gradient"></div>
+          </div>
+          <div class="campus-info">
+            <h3 class="campus-name">JPLPC-Malvar Campus</h3>
+            <span class="campus-tag">Satellite</span>
+            <p class="campus-address">Poblacion, Malvar</p>
+          </div>
+        </div>
+
+        <!-- Lipa -->
+        <div class="campus-card">
+          <div class="campus-image-wrap">
+            <img src="medias/BSU-Lipa.jpeg" alt="Lipa Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ELipa%3C/text%3E%3C/svg%3E'">
+            <div class="campus-gradient"></div>
+          </div>
+          <div class="campus-info">
+            <h3 class="campus-name">Lipa Campus</h3>
+            <span class="campus-tag">Constituent</span>
+            <p class="campus-address">Maraouy, Lipa City</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-subheader">
+        <h3 class="section-subtitle">Extension Campuses</h3>
+      </div>
+      <div class="campus-grid campus-grid-small">
+        <!-- Balayan -->
+        <div class="campus-card">
+          <div class="campus-image-wrap">
+            <img src="medias/BSU-Balayan.jpeg" alt="Balayan Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EBalayan%3C/text%3E%3C/svg%3E'">
+            <div class="campus-gradient"></div>
+          </div>
+          <div class="campus-info">
+            <h3 class="campus-name">Balayan Campus</h3>
+            <p class="campus-address">Brgy. Caloocan, Balayan</p>
+          </div>
+        </div>
+
+        <!-- Lemery -->
+        <div class="campus-card">
+          <div class="campus-image-wrap">
+            <img src="medias/BSU-Lemery.jpeg" alt="Lemery Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ELemery%3C/text%3E%3C/svg%3E'">
+            <div class="campus-gradient"></div>
+          </div>
+          <div class="campus-info">
+            <h3 class="campus-name">Lemery Campus</h3>
+            <p class="campus-address">Lemery</p>
+          </div>
+        </div>
+
+        <!-- Lobo -->
+        <div class="campus-card">
+          <div class="campus-image-wrap">
+            <img src="medias/BSU-Lobo.jpeg" alt="Lobo Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ELobo%3C/text%3E%3C/svg%3E'">
+            <div class="campus-gradient"></div>
+          </div>
+          <div class="campus-info">
+            <h3 class="campus-name">Lobo Campus</h3>
+            <p class="campus-address">Lobo</p>
+          </div>
+        </div>
+
+        <!-- Mabini -->
+        <div class="campus-card">
+          <div class="campus-image-wrap">
+            <img src="medias/BSU-Mabini.jpeg" alt="Mabini Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EMabini%3C/text%3E%3C/svg%3E'">
+            <div class="campus-gradient"></div>
+          </div>
+          <div class="campus-info">
+            <h3 class="campus-name">Mabini Campus</h3>
+            <p class="campus-address">Mabini</p>
+          </div>
+        </div>
+
+        <!-- Rosario -->
+        <div class="campus-card">
+          <div class="campus-image-wrap">
+            <img src="medias/BSU-Rosario.jpeg" alt="Rosario Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ERosario%3C/text%3E%3C/svg%3E'">
+            <div class="campus-gradient"></div>
+          </div>
+          <div class="campus-info">
+            <h3 class="campus-name">Rosario Campus</h3>
+            <p class="campus-address">Rosario</p>
+          </div>
+        </div>
+
+        <!-- San Juan -->
+        <div class="campus-card">
+          <div class="campus-image-wrap">
+            <img src="medias/BSU-SanJuan.jpeg" alt="San Juan Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ESan Juan%3C/text%3E%3C/svg%3E'">
+            <div class="campus-gradient"></div>
+          </div>
+          <div class="campus-info">
+            <h3 class="campus-name">San Juan Campus</h3>
+            <p class="campus-address">San Juan</p>
+          </div>
+        </div>
+
+        <!-- LIMA -->
+        <div class="campus-card">
+          <div class="campus-image-wrap">
+            <img src="medias/BSU-LIMA.jpeg" alt="LIMA Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ELIMA%3C/text%3E%3C/svg%3E'">
+            <div class="campus-gradient"></div>
+          </div>
+          <div class="campus-info">
+            <h3 class="campus-name">LIMA Campus</h3>
+            <p class="campus-address">Lipa-Malvar · Industry-integrated</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academics Section -->
+  <section class="academics-section" id="academics">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Offerings</span>
+        <h2 class="section-title">Programs & Degrees</h2>
+        <p class="section-subtitle">Explore our comprehensive academic portfolio</p>
+      </div>
+
+      <div class="tabs-container">
+        <div class="tabs-header">
+          <button class="tab-btn active" data-tab="bachelors">Bachelor's Degree <span class="tab-count">61</span></button>
+          <button class="tab-btn" data-tab="masters">Master's Degree <span class="tab-count">50+</span></button>
+          <button class="tab-btn" data-tab="doctorate">Doctorate <span class="tab-count">9</span></button>
+          <button class="tab-btn" data-tab="diploma">Diploma <span class="tab-count">1</span></button>
+        </div>
+
+        <div class="tabs-content">
+          <div class="tab-panel active" id="bachelors">
+            <div class="accordion-group">
+              <div class="accordion-item">
+                <button class="accordion-header">Arts & Humanities <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Customs Administration</li>
+                    <li>Early Childhood Education</li>
+                    <li>Elementary Education</li>
+                    <li>LL.B.</li>
+                    <li>Public Administration</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Business & Social Sciences <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Accountancy</li>
+                    <li>Business Economics</li>
+                    <li>Criminology</li>
+                    <li>Entrepreneurship</li>
+                    <li>Financial Management</li>
+                    <li>Home Economics</li>
+                    <li>Hospitality Management</li>
+                    <li>Human Resource Management</li>
+                    <li>Marketing Management</li>
+                    <li>Operations Management</li>
+                    <li>Secondary Education - Social Studies</li>
+                    <li>Tourism Management</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Engineering <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Aerospace Engineering</li>
+                    <li>Architecture</li>
+                    <li>Automotive Engineering</li>
+                    <li>Biomedical Engineering</li>
+                    <li>Ceramics Engineering</li>
+                    <li>Chemical Engineering</li>
+                    <li>Civil Engineering</li>
+                    <li>Computer Engineering</li>
+                    <li>Construction Engineering Management</li>
+                    <li>Drafting Engineering Technology</li>
+                    <li>Electrical Engineering</li>
+                    <li>Electronics Engineering</li>
+                    <li>Food Engineering</li>
+                    <li>Geodetic Engineering</li>
+                    <li>Geological Engineering</li>
+                    <li>Geotechnical Engineering</li>
+                    <li>Industrial Engineering</li>
+                    <li>Instrumentation & Control Engineering</li>
+                    <li>Interior Design</li>
+                    <li>Mechanical Engineering</li>
+                    <li>Mechatronics Engineering</li>
+                    <li>Metallurgical Engineering</li>
+                    <li>Naval Architecture and Marine Engineering</li>
+                    <li>Petroleum Engineering</li>
+                    <li>Sanitary Engineering</li>
+                    <li>Structural Engineering</li>
+                    <li>Transportation Engineering</li>
+                    <li>Water Resources Engineering</li>
+                    <li>Welding and Fabrication Engineering</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Language & Cultural Studies <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Secondary Education – English</li>
+                    <li>Secondary Education – Filipino</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Medicine & Health <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Nursing</li>
+                    <li>Nutrition and Dietetics</li>
+                    <li>Physical Education</li>
+                    <li>Public Health</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Science & Technology <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Agriculture</li>
+                    <li>Civil Technology</li>
+                    <li>Computer Science</li>
+                    <li>Forestry</li>
+                    <li>Garments - Fashion and Design</li>
+                    <li>Information Technology</li>
+                    <li>Secondary Education – Mathematics</li>
+                    <li>Secondary Education – Science</li>
+                    <li>Visual Communication</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="masters">
+            <div class="accordion-group">
+              <div class="accordion-item">
+                <button class="accordion-header">Arts & Humanities <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Communication</li>
+                    <li>Development Studies</li>
+                    <li>Educational Management</li>
+                    <li>Public Administration</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Business & Social Sciences <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Business Administration</li>
+                    <li>Development Communication</li>
+                    <li>Port Management</li>
+                    <li>Social Studies Teaching</li>
+                    <li>Supply Chain Management</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Engineering <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Chemical Engineering</li>
+                    <li>Civil Engineering</li>
+                    <li>Computer Engineering</li>
+                    <li>Construction Management</li>
+                    <li>Earthquake Engineering</li>
+                    <li>Electrical Engineering</li>
+                    <li>Electronics Engineering</li>
+                    <li>Energy Engineering</li>
+                    <li>Engineering Management</li>
+                    <li>Environmental Engineering</li>
+                    <li>Industrial Engineering</li>
+                    <li>Material Science and Engineering</li>
+                    <li>Mechanical Engineering</li>
+                    <li>Transportation Systems Engineering</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Language & Cultural Studies <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>English Language and Literature</li>
+                    <li>English Language Studies</li>
+                    <li>English Language Teaching</li>
+                    <li>Filipino Language Teaching</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Medicine & Health <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Physical Education</li>
+                    <li>Psychology</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Science & Technology <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Advanced Manufacturing</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Biology</li>
+                    <li>Chemistry</li>
+                    <li>Computer Science</li>
+                    <li>Criminology</li>
+                    <li>Data Science</li>
+                    <li>Disaster Risk Management</li>
+                    <li>Fisheries and Aquatic Sciences</li>
+                    <li>Information Technology</li>
+                    <li>Marine Biology</li>
+                    <li>Mathematics</li>
+                    <li>Mathematics Teaching</li>
+                    <li>Psychology</li>
+                    <li>Science Teaching</li>
+                    <li>Technology</li>
+                    <li>Technology and Livelihood Education Teaching</li>
+                    <li>Urban Planning and Design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="doctorate">
+            <div class="accordion-group">
+              <div class="accordion-item">
+                <button class="accordion-header">Arts & Humanities <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Educational Management</li>
+                    <li>Public Administration</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Business & Social Sciences <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Business Administration</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Engineering <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Electronics Engineering</li>
+                    <li>Engineering Education</li>
+                    <li>Engineering Management</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Language & Cultural Studies <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>English Language and Literature</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">Science & Technology <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Mathematics Education</li>
+                    <li>Technology</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="diploma">
+            <div class="accordion-group">
+              <div class="accordion-item">
+                <button class="accordion-header">Science & Technology <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <div class="accordion-body">
+                  <ul class="course-list">
+                    <li>Disaster Risk Management</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Events Section -->
+  <section class="news-section" id="news">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Latest Updates</span>
+        <h2 class="section-title">News & Events</h2>
+        <p class="section-subtitle">Stay connected with what's happening at BatStateU</p>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card featured">
+          <div class="news-image-wrap">
+            <img src="medias/BSU-2.jpeg" alt="News" class="news-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23E93324%22/%3E%3Ctext x=%22300%22 y=%22220%22 font-size=%2230%22 text-anchor=%22middle%22 fill=%22white%22%3ENews%3C/text%3E%3C/svg%3E'">
+            <span class="news-badge">Featured</span>
+          </div>
+          <div class="news-body">
+            <span class="news-date"><i class="far fa-calendar"></i> March 15, 2025</span>
+            <h3 class="news-title">BatStateU Ranks Among Top Engineering Universities in Asia</h3>
+            <p class="news-excerpt">The National Engineering University continues to elevate its global standing, earning recognition for excellence in research and innovation across the region.</p>
+            <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-image-wrap">
+            <img src="medias/BSU-3.jpeg" alt="News" class="news-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23E93324%22/%3E%3Ctext x=%22300%22 y=%22220%22 font-size=%2230%22 text-anchor=%22middle%22 fill=%22white%22%3ENews%3C/text%3E%3C/svg%3E'">
+          </div>
+          <div class="news-body">
+            <span class="news-date"><i class="far fa-calendar"></i> March 10, 2025</span>
+            <h3 class="news-title">New KIST Park Facility Opens at Alangilan Campus</h3>
+            <p class="news-excerpt">State-of-the-art laboratories and innovation hubs now available for students and industry partners.</p>
+            <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-image-wrap">
+            <img src="medias/BSU-4.jpeg" alt="News" class="news-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23E93324%22/%3E%3Ctext x=%22300%22 y=%22220%22 font-size=%2230%22 text-anchor=%22middle%22 fill=%22white%22%3ENews%3C/text%3E%3C/svg%3E'">
+          </div>
+          <div class="news-body">
+            <span class="news-date"><i class="far fa-calendar"></i> March 5, 2025</span>
+            <h3 class="news-title">International Research Collaboration Signed with Japanese University</h3>
+            <p class="news-excerpt">A new partnership opens doors for student exchange and joint research in advanced manufacturing.</p>
+            <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-image-wrap">
+            <img src="medias/BSU.jpeg" alt="News" class="news-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23E93324%22/%3E%3Ctext x=%22300%22 y=%22220%22 font-size=%2230%22 text-anchor=%22middle%22 fill=%22white%22%3ENews%3C/text%3E%3C/svg%3E'">
+          </div>
+          <div class="news-body">
+            <span class="news-date"><i class="far fa-calendar"></i> February 28, 2025</span>
+            <h3 class="news-title">TNEU Portal Launches Enhanced Student Services Dashboard</h3>
+            <p class="news-excerpt">A redesigned digital experience for enrollment, grades, and campus resources is now live.</p>
+            <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Contact Information</h2>
+        <p class="section-subtitle">Reach out to our campuses and offices</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3 class="contact-card-title"><i class="fas fa-phone-alt"></i> Trunklines</h3>
+          <div class="contact-item">
+            <strong>PABLO BORBON</strong>
+            <p>(043) 779-8400<br>(043) 779-8401<br>(043) 779-8402<br>(043) 779-8403<br>(043) 779-8404<br>(043) 779-8405<br>(043) 779-8406</p>
+          </div>
+          <div class="contact-item">
+            <strong>ALANGILAN</strong>
+            <p>(043) 425-0139<br>(043) 425-0143</p>
+          </div>
+          <div class="contact-item">
+            <strong>ARASOF-NASUGBU</strong>
+            <p>(043) 416-0349<br>(043) 416-0350<br>(043) 416-0068</p>
+          </div>
+          <div class="contact-item">
+            <strong>JPLPC-MALVAR</strong>
+            <p>(043) 778-2170<br>(043) 778-6633<br>(043) 406-0830</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3 class="contact-card-title"><i class="fas fa-envelope"></i> Registrar</h3>
+          <div class="contact-item">
+            <strong>Pablo Borbon</strong>
+            <p><a href="mailto:registrar.pb@g.batstate-u.edu.ph">registrar.pb@g.batstate-u.edu.ph</a></p>
+          </div>
+          <div class="contact-item">
+            <strong>Alangilan</strong>
+            <p><a href="mailto:registrar.alangilan@g.batstate-u.edu.ph">registrar.alangilan@g.batstate-u.edu.ph</a></p>
+          </div>
+          <div class="contact-item">
+            <strong>Malvar</strong>
+            <p><a href="mailto:registrar.malvar@g.batstate-u.edu.ph">registrar.malvar@g.batstate-u.edu.ph</a></p>
+          </div>
+          <div class="contact-item">
+            <strong>Nasugbu</strong>
+            <p><a href="mailto:registrar.nasugbu@g.batstate-u.edu.ph">registrar.nasugbu@g.batstate-u.edu.ph</a></p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3 class="contact-card-title"><i class="fas fa-laptop-code"></i> ICT Services</h3>
+          <div class="contact-item">
+            <strong>Pablo Borbon</strong>
+            <p><a href="mailto:ict.pb@g.batstate-u.edu.ph">ict.pb@g.batstate-u.edu.ph</a></p>
+          </div>
+          <div class="contact-item">
+            <strong>Alangilan</strong>
+            <p><a href="mailto:ict.alangilan@g.batstate-u.edu.ph">ict.alangilan@g.batstate-u.edu.ph</a></p>
+          </div>
+          <div class="contact-item">
+            <strong>Malvar</strong>
+            <p><a href="mailto:ict.malvar@g.batstate-u.edu.ph">ict.malvar@g.batstate-u.edu.ph</a></p>
+          </div>
+          <div class="contact-item">
+            <strong>Nasugbu</strong>
+            <p><a href="mailto:ictsupport.nasugbu@g.batstate-u.edu.ph">ictsupport.nasugbu@g.batstate-u.edu.ph</a></p>
+          </div>
+          <div class="contact-item">
+            <strong>Lipa</strong>
+            <p><a href="mailto:ict.lipa@g.batstate-u.edu.ph">ict.lipa@g.batstate-u.edu.ph</a></p>
+          </div>
+          <div class="contact-item">
+            <strong>Balayan</strong>
+            <p><a href="mailto:ict.balayan@g.batstate-u.edu.ph">ict.balayan@g.batstate-u.edu.ph</a></p>
+          </div>
+          <div class="contact-item">
+            <strong>Lemery</strong>
+            <p><a href="mailto:ict.lemery@g.batstate-u.edu.ph">ict.lemery@g.batstate-u.edu.ph</a></p>
+          </div>
+          <div class="contact-item">
+            <strong>San Juan</strong>
+            <p><a href="mailto:ict.sanjuan@g.batstate-u.edu.ph">ict.sanjuan@g.batstate-u.edu.ph</a></p>
+          </div>
+          <div class="contact-item">
+            <strong>Rosario</strong>
+            <p><a href="mailto:ict.rosario@g.batstate-u.edu.ph">ict.rosario@g.batstate-u.edu.ph</a></p>
+          </div>
+          <div class="contact-item">
+            <strong>Lobo</strong>
+            <p><a href="mailto:ict.lobo@g.batstate-u.edu.ph">ict.lobo@g.batstate-u.edu.ph</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (original simple version) -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Batangas State University · The National Engineering University</p>
+      <p class="footer-small">TNEU Portal — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      // ----- HERO BACKGROUND SLIDER -----
+      const slides = document.querySelectorAll('.hero-bg');
+      let currentSlide = 0;
+      const totalSlides = slides.length;
+      const slideInterval = 5000;
+
+      function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slides[currentSlide].classList.add('active');
+      }
+
+      let sliderTimer = setInterval(nextSlide, slideInterval);
+
+      const heroSection = document.querySelector('.hero');
+      heroSection.addEventListener('mouseenter', () => clearInterval(sliderTimer));
+      heroSection.addEventListener('mouseleave', () => {
+        clearInterval(sliderTimer);
+        sliderTimer = setInterval(nextSlide, slideInterval);
+      });
+
+      // ----- STATS COUNTER (hero + highlights) -----
+      const statNumbers = document.querySelectorAll('.stat-number, .highlight-number');
+      let counted = false;
+
+      function animateStats() {
+        if (counted) return;
+        const trigger = document.querySelector('.hero-stats') || document.querySelector('.highlights-band');
+        if (!trigger) return;
+        const rect = trigger.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if (rect.top < windowHeight - 100) {
+          statNumbers.forEach(el => {
+            const target = parseInt(el.getAttribute('data-target'), 10);
+            let count = 0;
+            const increment = Math.ceil(target / 40);
+            const updateCounter = () => {
+              count += increment;
+              if (count >= target) {
+                el.textContent = target;
+              } else {
+                el.textContent = count;
+                requestAnimationFrame(updateCounter);
+              }
+            };
+            updateCounter();
+          });
+          counted = true;
+        }
+      }
+
+      window.addEventListener('scroll', animateStats);
+      window.addEventListener('load', animateStats);
+      setTimeout(animateStats, 300);
+
+      // ----- HAMBURGER MENU -----
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          hamburger.classList.remove('active');
+        });
+      });
+
+      // ----- BUTTON INTERACTIONS -----
+      document.getElementById('exploreBtn').addEventListener('click', () => {
+        document.getElementById('academics').scrollIntoView({ behavior: 'smooth' });
+      });
+
+      document.getElementById('applyBtn').addEventListener('click', () => {
+        window.location.href = 'login.html';
+      });
+
+      document.getElementById('learnMoreBtn').addEventListener('click', () => {
+        document.querySelector('.about-section').scrollIntoView({ behavior: 'smooth' });
+      });
+
+      // ----- NAVBAR SCROLL EFFECT -----
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // ----- SCROLL INDICATOR -----
+      const scrollIndicator = document.querySelector('.scroll-indicator');
+      if (scrollIndicator) {
+        scrollIndicator.addEventListener('click', () => {
+          document.querySelector('.about-section').scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+
+      // ----- TABS -----
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      const tabPanels = document.querySelectorAll('.tab-panel');
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const target = btn.dataset.tab;
+          tabBtns.forEach(b => b.classList.remove('active'));
+          tabPanels.forEach(p => p.classList.remove('active'));
+          btn.classList.add('active');
+          document.getElementById(target).classList.add('active');
+        });
+      });
+
+      // ----- ACCORDION -----
+      const accordionHeaders = document.querySelectorAll('.accordion-header');
+      accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+          const item = header.parentElement;
+          const isActive = item.classList.contains('active');
+          const group = item.closest('.accordion-group');
+          group.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+          if (!isActive) {
+            item.classList.add('active');
+          }
+        });
+      });
+
+      // Open first accordion in each tab by default
+      document.querySelectorAll('.tab-panel.active .accordion-group .accordion-item:first-child').forEach(item => {
+        item.classList.add('active');
+      });
+
+      // ----- SCROLL SPY (updates nav-link active state) -----
+      const sections = document.querySelectorAll('section[id]');
+      const navItems = document.querySelectorAll('.nav-link');
+
+      function updateActiveNav() {
+        let currentId = '';
+        const scrollPos = window.scrollY + 120;
+
+        sections.forEach(section => {
+          const top = section.offsetTop;
+          const height = section.offsetHeight;
+          if (scrollPos >= top && scrollPos < top + height) {
+            currentId = section.getAttribute('id');
+          }
+        });
+
+        if (currentId) {
+          navItems.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + currentId) {
+              link.classList.add('active');
+            }
+          });
+        }
+      }
+
+      window.addEventListener('scroll', updateActiveNav);
+      window.addEventListener('load', updateActiveNav);
+
+      // ----- NEWS CARD TILT (subtle) -----
+      document.querySelectorAll('.news-card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          card.style.transform = `perspective(800px) rotateY(${x * 3}deg) rotateX(${-y * 3}deg) translateY(-4px)`;
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = '';
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>
