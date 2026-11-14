@@ -4,22 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Batangas State University · TNEU Portal</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- Header / Navbar -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
-      <div class="logo-area">
+      <a href="#home" class="logo-area">
         <img src="medias/BSU-Logo.jpeg" alt="BSU Logo" class="logo-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23E93324%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22white%22 font-weight=%22bold%22%3EB%3C/text%3E%3C/svg%3E'">
         <div class="logo-text-block">
-          <span class="logo-university">BATANGAS STATE UNIVERSITY</span>
+          <span class="logo-university">Batangas State University</span>
           <span class="logo-subtitle">The National Engineering University</span>
         </div>
-      </div>
+      </a>
       <nav class="nav-links" id="navLinks">
         <a href="#home" class="nav-link active">Home</a>
         <a href="#about" class="nav-link">About</a>
@@ -39,7 +41,7 @@
     </div>
   </header>
 
-  <!-- Hero Section (shorter) -->
+  <!-- Hero -->
   <section class="hero" id="home">
     <div class="hero-bg-slider" id="heroSlider">
       <div class="hero-bg active" style="background-image: url('medias/BSU.jpeg');"></div>
@@ -48,7 +50,7 @@
       <div class="hero-bg" style="background-image: url('medias/BSU-3.jpeg');"></div>
       <div class="hero-bg" style="background-image: url('medias/BSU-4.jpeg');"></div>
     </div>
-    <div class="hero-fade"></div>
+    <div class="hero-glow"></div>
 
     <div class="hero-content">
       <div class="hero-badge">National Engineering University</div>
@@ -67,18 +69,9 @@
         <button class="btn btn-outline" id="applyBtn">Apply Now</button>
       </div>
       <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-number" data-target="25">0</span>
-          <span class="stat-label">k+ Students</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="150">0</span>
-          <span class="stat-label">Programs</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="98">0</span>
-          <span class="stat-label">% Employability</span>
-        </div>
+        <div class="stat-item"><span class="stat-number" data-target="25" data-suffix="k+">0</span><span class="stat-label">Students</span></div>
+        <div class="stat-item"><span class="stat-number" data-target="150">0</span><span class="stat-label">Programs</span></div>
+        <div class="stat-item"><span class="stat-number" data-target="98" data-suffix="%">0</span><span class="stat-label">Employability</span></div>
       </div>
     </div>
 
@@ -88,7 +81,7 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section class="about-section" id="about">
     <div class="container">
       <div class="about-grid">
@@ -114,48 +107,31 @@
     </div>
   </section>
 
-  <!-- Stats / Highlights Band -->
+  <!-- Highlights -->
   <section class="highlights-band">
     <div class="container">
       <div class="highlights-grid">
-        <div class="highlight-item">
-          <i class="fas fa-award"></i>
-          <span class="highlight-number" data-target="12">0</span>
-          <span class="highlight-label">Centers of Excellence</span>
-        </div>
-        <div class="highlight-item">
-          <i class="fas fa-users"></i>
-          <span class="highlight-number" data-target="1500">0</span>
-          <span class="highlight-label">Faculty Members</span>
-        </div>
-        <div class="highlight-item">
-          <i class="fas fa-globe-asia"></i>
-          <span class="highlight-number" data-target="80">0</span>
-          <span class="highlight-label">Global Partners</span>
-        </div>
-        <div class="highlight-item">
-          <i class="fas fa-flask"></i>
-          <span class="highlight-number" data-target="200">0</span>
-          <span class="highlight-label">Research Projects</span>
-        </div>
+        <div class="highlight-item"><i class="fas fa-award"></i><span class="highlight-number" data-target="12">0</span><span class="highlight-label">Centers of Excellence</span></div>
+        <div class="highlight-item"><i class="fas fa-users"></i><span class="highlight-number" data-target="1500">0</span><span class="highlight-label">Faculty Members</span></div>
+        <div class="highlight-item"><i class="fas fa-globe-asia"></i><span class="highlight-number" data-target="80">0</span><span class="highlight-label">Global Partners</span></div>
+        <div class="highlight-item"><i class="fas fa-flask"></i><span class="highlight-number" data-target="200">0</span><span class="highlight-label">Research Projects</span></div>
       </div>
     </div>
   </section>
 
-  <!-- Campuses Section -->
+  <!-- Campuses -->
   <section class="campuses-section" id="campuses">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Our Campuses</span>
-        <h2 class="section-title">Constituent & Main Campuses</h2>
+        <h2 class="section-title">Constituent &amp; Main Campuses</h2>
         <p class="section-subtitle">Discover the home of innovation across Batangas</p>
       </div>
 
       <div class="campus-grid">
-        <!-- Pablo Borbon -->
         <div class="campus-card">
           <div class="campus-image-wrap">
-            <img src="medias/BSU.jpeg" alt="Pablo Borbon Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EPablo Borbon%3C/text%3E%3C/svg%3E'">
+            <img src="medias/BSU.jpeg" alt="Pablo Borbon Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22165%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EPablo Borbon%3C/text%3E%3C/svg%3E'">
             <div class="campus-gradient"></div>
           </div>
           <div class="campus-info">
@@ -164,11 +140,9 @@
             <p class="campus-address">Rizal Avenue, Poblacion, Batangas City</p>
           </div>
         </div>
-
-        <!-- Alangilan -->
         <div class="campus-card">
           <div class="campus-image-wrap">
-            <img src="medias/BSU-Alangilan.jpeg" alt="Alangilan Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EAlangilan%3C/text%3E%3C/svg%3E'">
+            <img src="medias/BSU-Alangilan.jpeg" alt="Alangilan Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22165%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EAlangilan%3C/text%3E%3C/svg%3E'">
             <div class="campus-gradient"></div>
           </div>
           <div class="campus-info">
@@ -177,11 +151,9 @@
             <p class="campus-address">Golden Country Homes, Alangilan, Batangas City</p>
           </div>
         </div>
-
-        <!-- ARASOF-Nasugbu -->
         <div class="campus-card">
           <div class="campus-image-wrap">
-            <img src="medias/BSU-ARASOF.jpeg" alt="ARASOF-Nasugbu Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EARASOF%3C/text%3E%3C/svg%3E'">
+            <img src="medias/BSU-ARASOF.jpeg" alt="ARASOF-Nasugbu Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22165%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EARASOF%3C/text%3E%3C/svg%3E'">
             <div class="campus-gradient"></div>
           </div>
           <div class="campus-info">
@@ -190,11 +162,9 @@
             <p class="campus-address">Brgy. Bucana, Nasugbu</p>
           </div>
         </div>
-
-        <!-- JPLPC-Malvar -->
         <div class="campus-card">
           <div class="campus-image-wrap">
-            <img src="medias/BSU-Malvar.jpeg" alt="JPLPC-Malvar Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EMalvar%3C/text%3E%3C/svg%3E'">
+            <img src="medias/BSU-Malvar.jpeg" alt="JPLPC-Malvar Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22165%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EMalvar%3C/text%3E%3C/svg%3E'">
             <div class="campus-gradient"></div>
           </div>
           <div class="campus-info">
@@ -203,11 +173,9 @@
             <p class="campus-address">Poblacion, Malvar</p>
           </div>
         </div>
-
-        <!-- Lipa -->
         <div class="campus-card">
           <div class="campus-image-wrap">
-            <img src="medias/BSU-Lipa.jpeg" alt="Lipa Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ELipa%3C/text%3E%3C/svg%3E'">
+            <img src="medias/BSU-Lipa.jpeg" alt="Lipa Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22165%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ELipa%3C/text%3E%3C/svg%3E'">
             <div class="campus-gradient"></div>
           </div>
           <div class="campus-info">
@@ -222,10 +190,9 @@
         <h3 class="section-subtitle">Extension Campuses</h3>
       </div>
       <div class="campus-grid campus-grid-small">
-        <!-- Balayan -->
         <div class="campus-card">
           <div class="campus-image-wrap">
-            <img src="medias/BSU-Balayan.jpeg" alt="Balayan Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EBalayan%3C/text%3E%3C/svg%3E'">
+            <img src="medias/BSU-Balayan.jpeg" alt="Balayan Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22165%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EBalayan%3C/text%3E%3C/svg%3E'">
             <div class="campus-gradient"></div>
           </div>
           <div class="campus-info">
@@ -233,11 +200,9 @@
             <p class="campus-address">Brgy. Caloocan, Balayan</p>
           </div>
         </div>
-
-        <!-- Lemery -->
         <div class="campus-card">
           <div class="campus-image-wrap">
-            <img src="medias/BSU-Lemery.jpeg" alt="Lemery Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ELemery%3C/text%3E%3C/svg%3E'">
+            <img src="medias/BSU-Lemery.jpeg" alt="Lemery Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22165%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ELemery%3C/text%3E%3C/svg%3E'">
             <div class="campus-gradient"></div>
           </div>
           <div class="campus-info">
@@ -245,11 +210,9 @@
             <p class="campus-address">Lemery</p>
           </div>
         </div>
-
-        <!-- Lobo -->
         <div class="campus-card">
           <div class="campus-image-wrap">
-            <img src="medias/BSU-Lobo.jpeg" alt="Lobo Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ELobo%3C/text%3E%3C/svg%3E'">
+            <img src="medias/BSU-Lobo.jpeg" alt="Lobo Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22165%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ELobo%3C/text%3E%3C/svg%3E'">
             <div class="campus-gradient"></div>
           </div>
           <div class="campus-info">
@@ -257,11 +220,9 @@
             <p class="campus-address">Lobo</p>
           </div>
         </div>
-
-        <!-- Mabini -->
         <div class="campus-card">
           <div class="campus-image-wrap">
-            <img src="medias/BSU-Mabini.jpeg" alt="Mabini Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EMabini%3C/text%3E%3C/svg%3E'">
+            <img src="medias/BSU-Mabini.jpeg" alt="Mabini Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22165%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3EMabini%3C/text%3E%3C/svg%3E'">
             <div class="campus-gradient"></div>
           </div>
           <div class="campus-info">
@@ -269,11 +230,9 @@
             <p class="campus-address">Mabini</p>
           </div>
         </div>
-
-        <!-- Rosario -->
         <div class="campus-card">
           <div class="campus-image-wrap">
-            <img src="medias/BSU-Rosario.jpeg" alt="Rosario Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ERosario%3C/text%3E%3C/svg%3E'">
+            <img src="medias/BSU-Rosario.jpeg" alt="Rosario Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22165%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ERosario%3C/text%3E%3C/svg%3E'">
             <div class="campus-gradient"></div>
           </div>
           <div class="campus-info">
@@ -281,11 +240,9 @@
             <p class="campus-address">Rosario</p>
           </div>
         </div>
-
-        <!-- San Juan -->
         <div class="campus-card">
           <div class="campus-image-wrap">
-            <img src="medias/BSU-SanJuan.jpeg" alt="San Juan Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ESan Juan%3C/text%3E%3C/svg%3E'">
+            <img src="medias/BSU-SanJuan.jpeg" alt="San Juan Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22165%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ESan Juan%3C/text%3E%3C/svg%3E'">
             <div class="campus-gradient"></div>
           </div>
           <div class="campus-info">
@@ -293,11 +250,9 @@
             <p class="campus-address">San Juan</p>
           </div>
         </div>
-
-        <!-- LIMA -->
         <div class="campus-card">
           <div class="campus-image-wrap">
-            <img src="medias/BSU-LIMA.jpeg" alt="LIMA Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22160%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ELIMA%3C/text%3E%3C/svg%3E'">
+            <img src="medias/BSU-LIMA.jpeg" alt="LIMA Campus" class="campus-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23E93324%22/%3E%3Ctext x=%22200%22 y=%22165%22 font-size=%2220%22 text-anchor=%22middle%22 fill=%22white%22%3ELIMA%3C/text%3E%3C/svg%3E'">
             <div class="campus-gradient"></div>
           </div>
           <div class="campus-info">
@@ -309,12 +264,12 @@
     </div>
   </section>
 
-  <!-- Academics Section -->
+  <!-- Academics -->
   <section class="academics-section" id="academics">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Academic Offerings</span>
-        <h2 class="section-title">Programs & Degrees</h2>
+        <h2 class="section-title">Programs &amp; Degrees</h2>
         <p class="section-subtitle">Explore our comprehensive academic portfolio</p>
       </div>
 
@@ -330,7 +285,7 @@
           <div class="tab-panel active" id="bachelors">
             <div class="accordion-group">
               <div class="accordion-item">
-                <button class="accordion-header">Arts & Humanities <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Arts &amp; Humanities <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>Customs Administration</li>
@@ -342,7 +297,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <button class="accordion-header">Business & Social Sciences <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Business &amp; Social Sciences <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>Accountancy</li>
@@ -381,7 +336,7 @@
                     <li>Geological Engineering</li>
                     <li>Geotechnical Engineering</li>
                     <li>Industrial Engineering</li>
-                    <li>Instrumentation & Control Engineering</li>
+                    <li>Instrumentation &amp; Control Engineering</li>
                     <li>Interior Design</li>
                     <li>Mechanical Engineering</li>
                     <li>Mechatronics Engineering</li>
@@ -397,7 +352,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <button class="accordion-header">Language & Cultural Studies <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Language &amp; Cultural Studies <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>Secondary Education – English</li>
@@ -406,7 +361,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <button class="accordion-header">Medicine & Health <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Medicine &amp; Health <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>Nursing</li>
@@ -417,7 +372,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <button class="accordion-header">Science & Technology <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Science &amp; Technology <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>Agriculture</li>
@@ -438,7 +393,7 @@
           <div class="tab-panel" id="masters">
             <div class="accordion-group">
               <div class="accordion-item">
-                <button class="accordion-header">Arts & Humanities <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Arts &amp; Humanities <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>Communication</li>
@@ -449,7 +404,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <button class="accordion-header">Business & Social Sciences <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Business &amp; Social Sciences <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>Business Administration</li>
@@ -482,7 +437,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <button class="accordion-header">Language & Cultural Studies <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Language &amp; Cultural Studies <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>English Language and Literature</li>
@@ -493,7 +448,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <button class="accordion-header">Medicine & Health <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Medicine &amp; Health <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>Physical Education</li>
@@ -502,7 +457,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <button class="accordion-header">Science & Technology <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Science &amp; Technology <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>Advanced Manufacturing</li>
@@ -532,7 +487,7 @@
           <div class="tab-panel" id="doctorate">
             <div class="accordion-group">
               <div class="accordion-item">
-                <button class="accordion-header">Arts & Humanities <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Arts &amp; Humanities <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>Educational Management</li>
@@ -541,7 +496,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <button class="accordion-header">Business & Social Sciences <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Business &amp; Social Sciences <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>Business Administration</li>
@@ -559,7 +514,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <button class="accordion-header">Language & Cultural Studies <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Language &amp; Cultural Studies <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>English Language and Literature</li>
@@ -567,7 +522,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <button class="accordion-header">Science & Technology <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Science &amp; Technology <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>Mathematics Education</li>
@@ -581,7 +536,7 @@
           <div class="tab-panel" id="diploma">
             <div class="accordion-group">
               <div class="accordion-item">
-                <button class="accordion-header">Science & Technology <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
+                <button class="accordion-header">Science &amp; Technology <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span></button>
                 <div class="accordion-body">
                   <ul class="course-list">
                     <li>Disaster Risk Management</li>
@@ -595,12 +550,12 @@
     </div>
   </section>
 
-  <!-- News & Events Section -->
+  <!-- News -->
   <section class="news-section" id="news">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Latest Updates</span>
-        <h2 class="section-title">News & Events</h2>
+        <h2 class="section-title">News &amp; Events</h2>
         <p class="section-subtitle">Stay connected with what's happening at BatStateU</p>
       </div>
 
@@ -657,7 +612,7 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section class="contact-section" id="contact">
     <div class="container">
       <div class="section-header">
@@ -754,7 +709,6 @@
     </div>
   </section>
 
-  <!-- Footer (original simple version) -->
   <footer class="footer">
     <div class="container">
       <p>© 2025 Batangas State University · The National Engineering University</p>
@@ -763,184 +717,132 @@
   </footer>
 
   <script>
-    (function() {
-      // ----- HERO BACKGROUND SLIDER -----
-      const slides = document.querySelectorAll('.hero-bg');
-      let currentSlide = 0;
-      const totalSlides = slides.length;
-      const slideInterval = 5000;
+    (function () {
+      const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+      const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-      function nextSlide() {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % totalSlides;
-        slides[currentSlide].classList.add('active');
+      // ----- HERO SLIDER -----
+      const slides = document.querySelectorAll('.hero-bg');
+      let current = 0;
+      const next = () => { slides[current].classList.remove('active'); current = (current + 1) % slides.length; slides[current].classList.add('active'); };
+      let timer = setInterval(next, 5000);
+      const hero = document.querySelector('.hero');
+      hero.addEventListener('mouseenter', () => clearInterval(timer));
+      hero.addEventListener('mouseleave', () => { clearInterval(timer); timer = setInterval(next, 5000); });
+
+      // ----- HERO: cursor glow + parallax -----
+      if (fine && !calm) {
+        hero.addEventListener('pointermove', (e) => {
+          const r = hero.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+          hero.style.setProperty('--mx', x + 'px'); hero.style.setProperty('--my', y + 'px');
+          hero.style.setProperty('--px', (x / r.width - .5).toFixed(3)); hero.style.setProperty('--py', (y / r.height - .5).toFixed(3));
+          hero.classList.add('is-active');
+        });
+        hero.addEventListener('pointerleave', () => {
+          hero.classList.remove('is-active');
+          hero.style.setProperty('--px', 0); hero.style.setProperty('--py', 0);
+        });
       }
 
-      let sliderTimer = setInterval(nextSlide, slideInterval);
-
-      const heroSection = document.querySelector('.hero');
-      heroSection.addEventListener('mouseenter', () => clearInterval(sliderTimer));
-      heroSection.addEventListener('mouseleave', () => {
-        clearInterval(sliderTimer);
-        sliderTimer = setInterval(nextSlide, slideInterval);
-      });
-
-      // ----- STATS COUNTER (hero + highlights) -----
-      const statNumbers = document.querySelectorAll('.stat-number, .highlight-number');
+      // ----- STATS COUNTER -----
+      const nums = document.querySelectorAll('.stat-number, .highlight-number');
       let counted = false;
-
       function animateStats() {
         if (counted) return;
-        const trigger = document.querySelector('.hero-stats') || document.querySelector('.highlights-band');
-        if (!trigger) return;
-        const rect = trigger.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        if (rect.top < windowHeight - 100) {
-          statNumbers.forEach(el => {
-            const target = parseInt(el.getAttribute('data-target'), 10);
-            let count = 0;
-            const increment = Math.ceil(target / 40);
-            const updateCounter = () => {
-              count += increment;
-              if (count >= target) {
-                el.textContent = target;
-              } else {
-                el.textContent = count;
-                requestAnimationFrame(updateCounter);
-              }
-            };
-            updateCounter();
+        const t = document.querySelector('.hero-stats');
+        if (t && t.getBoundingClientRect().top < window.innerHeight - 100) {
+          nums.forEach((el) => {
+            const target = parseInt(el.dataset.target, 10), step = Math.ceil(target / 40);
+            let c = 0;
+            const tick = () => { c += step; if (c >= target) { el.textContent = target; } else { el.textContent = c; requestAnimationFrame(tick); } };
+            tick();
           });
           counted = true;
         }
       }
-
       window.addEventListener('scroll', animateStats);
       window.addEventListener('load', animateStats);
       setTimeout(animateStats, 300);
 
-      // ----- HAMBURGER MENU -----
+      // ----- MOBILE MENU -----
       const hamburger = document.getElementById('hamburger');
       const navLinks = document.getElementById('navLinks');
+      hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); hamburger.classList.toggle('active'); });
+      document.querySelectorAll('.nav-link').forEach((l) => l.addEventListener('click', () => { navLinks.classList.remove('active'); hamburger.classList.remove('active'); }));
 
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        hamburger.classList.toggle('active');
-      });
+      // ----- BUTTONS -----
+      const go = (sel) => document.querySelector(sel).scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('exploreBtn').addEventListener('click', () => go('#academics'));
+      document.getElementById('applyBtn').addEventListener('click', () => { window.location.href = 'login.html'; });
+      document.getElementById('learnMoreBtn').addEventListener('click', () => go('.about-section'));
+      const si = document.querySelector('.scroll-indicator');
+      if (si) si.addEventListener('click', () => go('.about-section'));
 
-      document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-          navLinks.classList.remove('active');
-          hamburger.classList.remove('active');
-        });
-      });
-
-      // ----- BUTTON INTERACTIONS -----
-      document.getElementById('exploreBtn').addEventListener('click', () => {
-        document.getElementById('academics').scrollIntoView({ behavior: 'smooth' });
-      });
-
-      document.getElementById('applyBtn').addEventListener('click', () => {
-        window.location.href = 'login.html';
-      });
-
-      document.getElementById('learnMoreBtn').addEventListener('click', () => {
-        document.querySelector('.about-section').scrollIntoView({ behavior: 'smooth' });
-      });
-
-      // ----- NAVBAR SCROLL EFFECT -----
+      // ----- NAVBAR SCROLL -----
       const navbar = document.getElementById('navbar');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-      });
-
-      // ----- SCROLL INDICATOR -----
-      const scrollIndicator = document.querySelector('.scroll-indicator');
-      if (scrollIndicator) {
-        scrollIndicator.addEventListener('click', () => {
-          document.querySelector('.about-section').scrollIntoView({ behavior: 'smooth' });
-        });
-      }
+      window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 50));
 
       // ----- TABS -----
-      const tabBtns = document.querySelectorAll('.tab-btn');
-      const tabPanels = document.querySelectorAll('.tab-panel');
-
-      tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const target = btn.dataset.tab;
-          tabBtns.forEach(b => b.classList.remove('active'));
-          tabPanels.forEach(p => p.classList.remove('active'));
-          btn.classList.add('active');
-          document.getElementById(target).classList.add('active');
-        });
-      });
+      const tabBtns = document.querySelectorAll('.tab-btn'), panels = document.querySelectorAll('.tab-panel');
+      tabBtns.forEach((b) => b.addEventListener('click', () => {
+        tabBtns.forEach((x) => x.classList.remove('active')); panels.forEach((p) => p.classList.remove('active'));
+        b.classList.add('active'); document.getElementById(b.dataset.tab).classList.add('active');
+      }));
 
       // ----- ACCORDION -----
-      const accordionHeaders = document.querySelectorAll('.accordion-header');
-      accordionHeaders.forEach(header => {
-        header.addEventListener('click', () => {
-          const item = header.parentElement;
-          const isActive = item.classList.contains('active');
-          const group = item.closest('.accordion-group');
-          group.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
-          if (!isActive) {
-            item.classList.add('active');
-          }
-        });
-      });
+      document.querySelectorAll('.accordion-header').forEach((h) => h.addEventListener('click', () => {
+        const item = h.parentElement, was = item.classList.contains('active');
+        item.closest('.accordion-group').querySelectorAll('.accordion-item').forEach((i) => i.classList.remove('active'));
+        if (!was) item.classList.add('active');
+      }));
+      document.querySelectorAll('.tab-panel.active .accordion-item:first-child').forEach((i) => i.classList.add('active'));
 
-      // Open first accordion in each tab by default
-      document.querySelectorAll('.tab-panel.active .accordion-group .accordion-item:first-child').forEach(item => {
-        item.classList.add('active');
-      });
-
-      // ----- SCROLL SPY (updates nav-link active state) -----
-      const sections = document.querySelectorAll('section[id]');
-      const navItems = document.querySelectorAll('.nav-link');
-
-      function updateActiveNav() {
-        let currentId = '';
-        const scrollPos = window.scrollY + 120;
-
-        sections.forEach(section => {
-          const top = section.offsetTop;
-          const height = section.offsetHeight;
-          if (scrollPos >= top && scrollPos < top + height) {
-            currentId = section.getAttribute('id');
-          }
-        });
-
-        if (currentId) {
-          navItems.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + currentId) {
-              link.classList.add('active');
-            }
-          });
-        }
+      // ----- SCROLL SPY -----
+      const sections = document.querySelectorAll('section[id]'), items = document.querySelectorAll('.nav-link');
+      function spy() {
+        const pos = window.scrollY + 140; let id = '';
+        sections.forEach((s) => { if (pos >= s.offsetTop && pos < s.offsetTop + s.offsetHeight) id = s.id; });
+        if (id) items.forEach((l) => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
       }
+      window.addEventListener('scroll', spy); window.addEventListener('load', spy);
 
-      window.addEventListener('scroll', updateActiveNav);
-      window.addEventListener('load', updateActiveNav);
-
-      // ----- NEWS CARD TILT (subtle) -----
-      document.querySelectorAll('.news-card').forEach(card => {
+      // ----- NEWS CARD TILT -----
+      if (fine && !calm) document.querySelectorAll('.news-card').forEach((card) => {
         card.addEventListener('mousemove', (e) => {
-          const rect = card.getBoundingClientRect();
-          const x = (e.clientX - rect.left) / rect.width - 0.5;
-          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          const r = card.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
           card.style.transform = `perspective(800px) rotateY(${x * 3}deg) rotateX(${-y * 3}deg) translateY(-4px)`;
         });
-        card.addEventListener('mouseleave', () => {
-          card.style.transform = '';
-        });
+        card.addEventListener('mouseleave', () => { card.style.transform = ''; });
       });
 
+      // ----- SCROLL REVEAL -----
+      const sel = '.section-header,.about-text,.about-image,.highlight-item,.campus-card,.section-subheader,.tabs-container,.news-card,.contact-card';
+      const els = [...document.querySelectorAll(sel)];
+      els.forEach((el) => {
+        el.classList.add('rv');
+        const sibs = [...el.parentElement.children].filter((c) => c.matches(sel));
+        el.style.setProperty('--d', (sibs.indexOf(el) % 6) * 70 + 'ms');
+        el.addEventListener('transitionend', (ev) => {
+          if (ev.propertyName === 'opacity' && el.classList.contains('in')) { el.classList.remove('rv', 'in'); el.style.removeProperty('--d'); }
+        });
+      });
+      if (calm || !('IntersectionObserver' in window)) {
+        els.forEach((el) => el.classList.add('in'));
+      } else {
+        const io = new IntersectionObserver((entries) => entries.forEach((en) => {
+          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+        }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+        els.forEach((el) => io.observe(el));
+      }
+
+      // ----- BUTTON RIPPLE -----
+      document.querySelectorAll('.btn, .btn-login').forEach((b) => b.addEventListener('pointerdown', (e) => {
+        if (calm) return;
+        const r = b.getBoundingClientRect(), s = Math.max(r.width, r.height) * 2, d = document.createElement('span');
+        d.className = 'ripple';
+        d.style.cssText = `width:${s}px;height:${s}px;left:${e.clientX - r.left - s / 2}px;top:${e.clientY - r.top - s / 2}px`;
+        b.appendChild(d); d.addEventListener('animationend', () => d.remove());
+      }));
     })();
   </script>
 </body>

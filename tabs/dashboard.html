@@ -1,0 +1,188 @@
+<link rel="stylesheet" href="../css/faculty-dashboard.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+<section class="page-section">
+  <div class="metrics-grid">
+    <article class="metric-card">
+      <div class="metric-header">
+        <div class="metric-icon"><i class="fas fa-book-open"></i></div>
+        <span class="metric-trend">+8.2%</span>
+      </div>
+      <p class="metric-value">24</p>
+      <p class="metric-label">Active classes</p>
+    </article>
+
+    <article class="metric-card">
+      <div class="metric-header">
+        <div class="metric-icon"><i class="fas fa-user-graduate"></i></div>
+        <span class="metric-trend">+12%</span>
+      </div>
+      <p class="metric-value">318</p>
+      <p class="metric-label">Students enrolled</p>
+    </article>
+
+    <article class="metric-card">
+      <div class="metric-header">
+        <div class="metric-icon"><i class="fas fa-chart-line"></i></div>
+        <span class="metric-trend down">-1.4%</span>
+      </div>
+      <p class="metric-value">91%</p>
+      <p class="metric-label">Average completion</p>
+    </article>
+
+    <article class="metric-card">
+      <div class="metric-header">
+        <div class="metric-icon"><i class="fas fa-clipboard-check"></i></div>
+        <span class="metric-trend">+6.1%</span>
+      </div>
+      <p class="metric-value">84%</p>
+      <p class="metric-label">Grade submission</p>
+    </article>
+  </div>
+
+  <div class="dashboard-grid">
+    <section class="panel">
+      <div class="panel-header">
+        <h2 class="panel-title">Today's schedule</h2>
+        <button class="ghost-button" type="button"><i class="fas fa-calendar-week"></i> Week view</button>
+      </div>
+
+      <div class="schedule-list">
+        <div class="schedule-item">
+          <div class="schedule-main">
+            <span class="time-badge">08:30</span>
+            <div>
+              <strong>Engineering Mathematics</strong>
+              <small>Room 302 • 2nd Year - Section A</small>
+            </div>
+          </div>
+          <span class="status-badge">On track</span>
+        </div>
+
+        <div class="schedule-item">
+          <div class="schedule-main">
+            <span class="time-badge">10:15</span>
+            <div>
+              <strong>Computer Aided Design</strong>
+              <small>Innovation Lab • 3rd Year - Section B</small>
+            </div>
+          </div>
+          <span class="status-badge pending">Review</span>
+        </div>
+
+        <div class="schedule-item">
+          <div class="schedule-main">
+            <span class="time-badge">13:30</span>
+            <div>
+              <strong>Project Consultation</strong>
+              <small>Faculty Office • 1:1 mentoring</small>
+            </div>
+          </div>
+          <span class="status-badge warning">4 slots</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2 class="panel-title">Upcoming tasks</h2>
+        <button class="secondary-button" type="button">Manage</button>
+      </div>
+
+      <div class="task-list">
+        <div class="task-item">
+          <div class="task-main">
+            <span class="task-icon"><i class="fas fa-file-lines"></i></span>
+            <div>
+              <strong>Finalize midterm grades</strong>
+              <small>Due today • 5:00 PM</small>
+            </div>
+          </div>
+          <span class="score-badge">12 left</span>
+        </div>
+
+        <div class="task-item">
+          <div class="task-main">
+            <span class="task-icon"><i class="fas fa-user-check"></i></span>
+            <div>
+              <strong>Student advising logs</strong>
+              <small>Due tomorrow • 9:00 AM</small>
+            </div>
+          </div>
+          <span class="pill-tag">Checklist</span>
+        </div>
+
+        <div class="task-item">
+          <div class="task-main">
+            <span class="task-icon"><i class="fas fa-chart-column"></i></span>
+            <div>
+              <strong>Class performance report</strong>
+              <small>Review before faculty meeting</small>
+            </div>
+          </div>
+          <span class="pill-tag">Draft</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="quick-grid">
+    <article class="summary-card">
+      <div class="summary-head">
+        <div>
+          <span class="section-tag">Performance</span>
+          <p class="summary-value">88.5%</p>
+        </div>
+        <span class="metric-trend">+3.8%</span>
+      </div>
+      <p class="summary-label">Overall class pass rate</p>
+
+      <div class="bar-stack">
+        <div class="bar-row">
+          <span>Math</span>
+          <div class="progress"><span style="width: 82%;"></span></div>
+          <strong>82%</strong>
+        </div>
+        <div class="bar-row">
+          <span>CAD</span>
+          <div class="progress"><span style="width: 90%;"></span></div>
+          <strong>90%</strong>
+        </div>
+        <div class="bar-row">
+          <span>Design</span>
+          <div class="progress"><span style="width: 86%;"></span></div>
+          <strong>86%</strong>
+        </div>
+      </div>
+    </article>
+
+    <article class="summary-card">
+      <div class="summary-head">
+        <div>
+          <span class="section-tag">Attendance</span>
+          <p class="summary-value">96.4%</p>
+        </div>
+        <span class="metric-trend">+2.1%</span>
+      </div>
+      <p class="summary-label">Class attendance across all loads</p>
+
+      <div class="bar-stack">
+        <div class="bar-row">
+          <span>Section A</span>
+          <div class="progress"><span style="width: 96%;"></span></div>
+          <strong>96%</strong>
+        </div>
+        <div class="bar-row">
+          <span>Section B</span>
+          <div class="progress"><span style="width: 95%;"></span></div>
+          <strong>95%</strong>
+        </div>
+        <div class="bar-row">
+          <span>Section C</span>
+          <div class="progress"><span style="width: 98%;"></span></div>
+          <strong>98%</strong>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>

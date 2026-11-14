@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="../css/faculty-dashboard.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+<section class="page-section">
+  <div class="setting-grid">
+    <article class="setting-card">
+      <div class="card-head">
+        <div>
+          <span class="section-tag">Profile</span>
+          <h2 class="panel-title">Faculty profile</h2>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="facultyName">Full name</label>
+        <input class="field-input" id="facultyName" type="text" value="Maria Elena Santos" />
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="facultyEmail">Email address</label>
+        <input class="field-input" id="facultyEmail" type="email" value="maria.santos@batstateu.edu.ph" />
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="facultyDepartment">Department</label>
+        <select class="field-select" id="facultyDepartment">
+          <option selected>College of Engineering</option>
+          <option>College of Architecture</option>
+          <option>College of Industrial Technology</option>
+        </select>
+      </div>
+    </article>
+
+    <article class="setting-card">
+      <div class="card-head">
+        <div>
+          <span class="section-tag">Preferences</span>
+          <h2 class="panel-title">Portal settings</h2>
+        </div>
+      </div>
+
+      <div class="setting-list">
+        <div class="toggle-row">
+          <div>
+            <strong>Grade alerts</strong>
+            <small>Notify me when grades are due</small>
+          </div>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="toggle-row">
+          <div>
+            <strong>Performance summaries</strong>
+            <small>Send weekly class summaries</small>
+          </div>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="toggle-row">
+          <div>
+            <strong>Student follow-up reminders</strong>
+            <small>Prompt me for low-performing students</small>
+          </div>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">
+      <h2 class="panel-title">Academic preferences</h2>
+      <button class="primary-button" type="button">Save changes</button>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label" for="notes">Faculty notes</label>
+      <textarea class="field-textarea" id="notes">Prioritize early intervention for students below 80% average and review grading deadlines before submission.</textarea>
+    </div>
+  </div>
+</section>

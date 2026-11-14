@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="../../css/faculty-dashboard.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+<div class="dashboard-grid">
+  <div class="panel">
+    <div class="panel-header">
+      <h3 class="panel-title">Grade submission status</h3>
+      <button class="secondary-button" type="button">Review list</button>
+    </div>
+
+    <div class="schedule-list">
+      <div class="schedule-item">
+        <div class="schedule-main">
+          <span class="list-icon"><i class="fas fa-square-poll-vertical"></i></span>
+          <div>
+            <strong>Midterm grade entries</strong>
+            <small>184 of 218 submitted</small>
+          </div>
+        </div>
+        <span class="status-badge">84%</span>
+      </div>
+
+      <div class="schedule-item">
+        <div class="schedule-main">
+          <span class="list-icon"><i class="fas fa-file-signature"></i></span>
+          <div>
+            <strong>Final grade approval queue</strong>
+            <small>18 documents waiting for review</small>
+          </div>
+        </div>
+        <span class="status-badge pending">Pending</span>
+      </div>
+
+      <div class="schedule-item">
+        <div class="schedule-main">
+          <span class="list-icon"><i class="fas fa-pen-to-square"></i></span>
+          <div>
+            <strong>Grade corrections</strong>
+            <small>9 corrections require updates</small>
+          </div>
+        </div>
+        <span class="status-badge warning">Needs review</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">
+      <h3 class="panel-title">Assessment mix</h3>
+      <button class="ghost-button" type="button">Open form</button>
+    </div>
+
+    <div class="bar-stack">
+      <div class="bar-row">
+        <span>Assignments</span>
+        <div class="progress"><span style="width: 72%;"></span></div>
+        <strong>72%</strong>
+      </div>
+      <div class="bar-row">
+        <span>Quizzes</span>
+        <div class="progress"><span style="width: 64%;"></span></div>
+        <strong>64%</strong>
+      </div>
+      <div class="bar-row">
+        <span>Exam</span>
+        <div class="progress"><span style="width: 89%;"></span></div>
+        <strong>89%</strong>
+      </div>
+      <div class="bar-row">
+        <span>Activities</span>
+        <div class="progress"><span style="width: 76%;"></span></div>
+        <strong>76%</strong>
+      </div>
+    </div>
+  </div>
+</div>
